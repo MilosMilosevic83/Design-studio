@@ -1,0 +1,183 @@
+@import 'mixins.scss';
+
+body {
+  margin:0;
+  padding:0;
+}
+.nav-expander {
+
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 20px;
+  z-index: 12;
+  @include transition(right 0.3s ease-in-out 0s);
+  &:hover {
+    cursor: pointer;
+  }
+  &.fixed {
+    position: fixed;
+    right: 2em;
+  }
+}
+
+.nav-expanded {
+   margin-left: 0em;
+  @include transition(right 0.3s ease-in-out 0s);
+  nav {
+      right: 0;
+    }
+  }
+
+#nav-close {
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.main-menu {
+  padding-top: 0;
+  li {
+      border-bottom: 1px solid #e8e5e5;
+      margin-left: 20px;
+      font-size: 18px;
+      padding: 12px;
+      .sub-nav {
+        border-bottom: 0px;
+        padding: 4px;
+      }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: .9em;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+.navbar-inverse {
+    background:transparent; 
+    border: none; 
+}
+
+
+nav {
+        background:#2F2F2F;
+        display: block;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+        right: -22em;
+        font-size: 15px;
+        top: 0;
+        width: 16em;
+        z-index: 2000;
+        @include transition(right 0.3s ease-in-out 0s);
+}
+.navbar-fixed-top {
+  position: fixed;
+  right: 0 !important;
+  left:300px;
+  z-index: 1030;
+}
+
+.navbar-header {
+  background:rgb(14,17,26);
+ span {
+    display: block;
+    width:50px;
+    height:11px;
+    margin:2px;
+    background:rgb(14,17,26);
+    border:1px solid #fff;
+    } 
+  } 
+
+.landing-bg {
+      background:url(../img/landing-bg.jpg) no-repeat top center;
+  @include background_stretch;
+  padding:0 0 25% 0;
+  overflow: hidden;
+}
+.dektop-logo-menu-wrap {
+    width: 100%;
+
+    font-family:$font-main; 
+    padding:0 0 40px 0;
+    position:relative;
+  }
+.desktop-logo-main {
+  position: absolute;
+  width: 200px;
+  height:70px;
+  top:15px;
+  left:0;
+
+}
+.main-menu {
+  li {
+    padding:0;
+    border-bottom:1px solid #353535;
+    a {
+      display: block;
+      width: 100%;
+      padding:20px;
+       &:hover {
+        background: #353535;
+       }
+    }
+  }
+}
+.main-headline {
+    text-align: center;
+    padding-top:2.2%;
+    h1 {
+      margin:160px auto 0 auto;
+      padding:80px 0 20px 0;
+      position: relative;
+      color: #0E111A;
+      font-weight: 700;
+      font-size:4em;
+       @include breakpoint(medium_screen1){
+        padding:20px;
+         font-size: 2.5em;
+         background:rgba(254,254,254,.8)
+      }
+    }
+  }
+  .main-btn {
+      display: block;
+      font-size: 1.1em;
+      text-decoration: none;
+      text-align:center;
+      font-family:$font-main;
+      padding: 5px 20px;
+      width: 160px;
+      height: 45px;
+      color: #0F111D;
+      border:3px solid $main-color;
+      margin:20px auto 0 auto;
+      line-height: 29px;
+      background:#fff;
+      cursor:pointer;
+       &:hover {
+        text-decoration: none;
+        color: #fff;
+        background:$main-color;
+       }
+       @include breakpoint(medium_screen1){
+          margin:50px auto;
+      }
+  }

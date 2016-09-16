@@ -1,0 +1,35 @@
+@import 'mixins.scss';
+.contact-wrap-bg {
+  background:#2F2F2F;
+  overflow: hidden;
+  text-align:center;
+    p {
+    color: #fff;
+    font-size: 1.4em;
+    padding:20px 0;
+  }
+}
+.center-bg {
+  background:#353535;
+  max-width: 350px;
+  margin:0 auto;
+    padding:40px 0;
+}
+.all-services {
+  font-weight: 300;
+  font-family: $font-main;
+}
+
+.social {
+  display: table;
+  width:200px;
+  text-align:center;
+  margin:0 auto;
+  a {
+    display: table-cell;
+  }
+  img {
+    max-width:50px;
+    
+  }
+}

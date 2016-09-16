@@ -1,0 +1,60 @@
+@import 'mixins.scss';
+.headline-wrapper {
+  margin-top: 50px;
+  color:#fff;
+  text-align: left; 
+  font-family:$font-main; 
+  padding:15px;
+    }
+
+.service-headline {
+
+      text-align:left;
+        padding:0;
+        margin-bottom:30px;
+        img {
+          max-width: 1920px;
+          width: 100%;
+        }
+
+         h2 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 300;
+      color: #353535;
+      text-align: left;
+      padding:35px 30px 30px 0;
+      position:relative;
+
+      font-family:$font-main;
+      }
+      p {
+        clear: both;
+        color: #78797A;
+        font-size: 1em;
+        padding:15px 30px 30px 0;
+      }
+    }
+
+.services-cells {
+  padding:10px 0;
+
+    h3 {
+        color: #353535;
+        border-bottom:#E55151;
+        clear: both;
+        font-weight: 300;
+        font-size: 1.4em;
+         @include breakpoint(medium_screen1){
+          font-size: 1.2em;
+         }
+      }
+      p {
+        clear: both;
+        color: #78797A;
+        font-size: 1em;
+        @include breakpoint(medium_screen1){
+          width: 100%;
+         }
+      }
+}

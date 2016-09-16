@@ -1,0 +1,59 @@
+@import 'mixins.scss';
+
+.yellow-wrap {
+  clear: both;
+  padding-top: 40px;
+}
+
+.work {
+  color:#0C0C0C;
+  position: relative;
+  z-index: 1000;
+  padding-left:0;
+  text-align: center; 
+  padding:15px;
+  overflow: hidden;
+  font-weight: 300;
+
+    font-family:$font-main;
+    div.headline {
+      border-bottom:0;
+    } 
+    div {
+        padding-bottom:40px;
+        border-bottom:1px solid #b3b3b3;
+        @include breakpoint(medium_screen1){
+          border:0;
+        }
+       img {
+        max-width: 500px;
+        width: 100%;
+        padding:10px;
+      }
+      a {
+        &:hover {
+          opacity:.8;
+          text-decoration: none;
+        }
+      }
+      h3 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color:#999;
+        text-align: left;
+        padding-top:20px;
+        padding-left:10px;
+      }
+    }
+     h2 {
+        font-size: 3em;
+        font-weight: 300;
+        padding-bottom:40px;
+        color: #000;
+        text-align:left;
+        @include breakpoint(medium_screen1){
+          text-align:center;
+        }
+      }
+    }
+

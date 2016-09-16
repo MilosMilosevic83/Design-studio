@@ -1,0 +1,38 @@
+@import 'mixins.scss';
+
+.who {
+  font-family:$font-main;
+ .inner-who {
+    padding:5%;
+    background:#fff;
+    margin-top: -200px;
+      background:#fff;
+      @include box-shadow(0px, -28px, 20px, 0px, rgba(50, 50, 50, 0.11))
+      @include breakpoint(medium_screen1){
+         margin-top: -50px;
+      }
+     div {
+      background:transparent;
+      border-bottom:1px solid #b3b3b3;
+      padding-bottom:30px;
+     }
+  }
+  h2 {
+    font-size: 3em;
+    font-weight: 300;
+    margin:0;
+    padding-bottom:40px;
+    color: #000;
+  }
+  p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color:#999;
+  }
+  a {
+    color: inherit;
+    font-weight: 700;
+    display:block;
+    margin-top: 40px;
+  }
+}
